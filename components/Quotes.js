@@ -23,7 +23,7 @@ const Quotes = ({ data = [] }) => {
               <p className="border-4 p-4 border-black rounded-lg bg-white">
                 {quote}
               </p>
-              <Image src={image} width={500} height={500} />
+              <Image src={image} width={500} height={500} alt={character} />
             </div>
           </div>
         );
