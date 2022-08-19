@@ -35,7 +35,9 @@ const Index = ({ data }) => {
   );
 };
 
-export const getStaticProps = async () => {
+export default Index;
+
+export const getServerSideProps = async () => {
   const data = await getQuotes({}, true);
   return {
     props: {
@@ -43,5 +45,3 @@ export const getStaticProps = async () => {
     },
   };
 };
-
-export default Index;
