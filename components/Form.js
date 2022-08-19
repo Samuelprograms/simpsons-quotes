@@ -6,7 +6,7 @@ const Form = ({ onSubmit }) => {
   return (
     <form
       onSubmit={onSubmit}
-      className="flex flex-col items-center justify-center space-y-2 w-96 mx-auto"
+      className="flex flex-col items-center justify-center space-y-2 w-full sm:w-96 mx-auto"
     >
       <Input type="text" name="character" placeholder="Character" />
       <Input
