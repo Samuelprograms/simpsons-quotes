@@ -16,7 +16,7 @@ const Quotes = ({ data = [] }) => {
               {character}
             </h1>
             <div
-              className={`flex items-center justify-center flex-col p-7 ${
+              className={`flex items-center justify-center h-full flex-col p-7 ${
                 characterDirection === "Right"
                   ? "md:flex-row"
                   : "md:flex-row-reverse"

@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "components/Input";
 import Switch from "./Switch";
+import Button from "./Button";
 
 const Form = ({ onSubmit }) => {
   return (
@@ -16,13 +17,13 @@ const Form = ({ onSubmit }) => {
         min={1}
         defaultValue={1}
       />
-      <div className="flex w-full space-x-2">
-        <button
+      <div className="w-full flex space-x-2">
+        <Button
           type="submit"
-          className="bg-white flex-1 w-full px-4 py-2 rounded-lg dark:bg-black dark:text-white border-black border-2 dark:border-white"
+          className="w-full flex-1 bg-white px-4 py-2 rounded-lg dark:bg-black dark:text-white border-black border-2 dark:border-white"
         >
           Search
-        </button>
+        </Button>
         <Switch />
       </div>
     </form>
