@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getQuotes = async ({ character, quantity }, firstTime = false) => {
-  const url = process.env.DOMAIN;
+  const url = "https://simpsons-quotes-tau.vercel.app/api/quotes";
   if (firstTime) {
     const { data } = await axios.get(url);
     return data;
